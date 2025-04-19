@@ -1,0 +1,78 @@
+// scss/components/_hero.scss
+
+.hero {
+    background: linear-gradient(135deg, $gris-claro, $blanco);
+    padding: 4rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 3rem;
+        color: $naranja-oscuro;
+        margin-bottom: 1rem;
+        font-weight: 700;
+        animation: fadeInDown 1s ease-out;
+    }
+
+    // Estilo mejorado para el párrafo principal
+    p {
+        max-width: 600px;
+        margin: 0 auto 2rem;
+        font-size: 1.25rem;
+        color: $gris-oscuro;
+        line-height: 1.6;
+        font-style: italic;
+        letter-spacing: 0.5px;
+        opacity: 0;
+        animation: fadeInUp 1s ease-out 0.5s forwards;
+    }
+
+    a.btn {
+        @include transition(all 0.3s ease);
+        background-color: $naranja-oscuro;
+        color: $blanco;
+
+        &:hover {
+            background-color: darken($naranja-oscuro, 10%);
+            transform: scale(1.05);
+        }
+    }
+
+    @include mobile {
+        h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+// Animaciones
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,60 @@
+#nosotros {
+    background-color: $gris-claro;
+    padding: 4rem 2rem;
+    text-align: center;
+  
+    h2 {
+      font-size: 2.5rem;
+      color: $naranja-oscuro;
+      margin-bottom: 1.5rem;
+      @include mobile {
+        font-size: 2rem;
+      }
+    }
+  
+    p {
+      font-size: 1.125rem;
+      color: $gris-oscuro;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+  
+    .equipo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+  
+      @include mobile {
+        grid-template-columns: 1fr;
+      }
+  
+      .miembro {
+        background-color: $blanco;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+  
+        img {
+          width: 120px;
+          height: 120px;
+          object-fit: cover;
+          border-radius: 50%;
+          margin-bottom: 1rem;
+        }
+  
+        h3 {
+          font-size: 1.25rem;
+          color: $naranja-oscuro;
+          margin-bottom: 0.5rem;
+        }
+  
+        p {
+          font-size: 1rem;
+          color: $gris-oscuro;
+        }
+      }
+    }
+  }
+  

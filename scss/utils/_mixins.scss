@@ -1,0 +1,19 @@
+// Mixins para media queries
+
+@mixin mobile {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  
+// Mixin para transiciones
+
+@mixin transition($properties...) {
+  transition: $properties;
+}

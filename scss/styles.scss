@@ -1,0 +1,23 @@
+// Importo todas las hojas de estilo necesarias para el proyecto
+
+// utils
+@import 'utils/variables';
+@import 'utils/mixins';
+
+// base
+@import 'base/reset';
+@import 'base/typography';
+
+// layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// components
+@import 'components/navbar';
+@import 'components/hero';
+
+// pages
+@import 'pages/acercade';
+@import 'pages/contacto';
+@import 'pages/nosotros';
+@import 'pages/programas';
