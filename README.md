@@ -1,6 +1,9 @@
 # ADMByte — Proyecto Final
 
-**Link en vivo:** http://proyectoadmbyte.great-site.net/
+Enlaces para visualizar:
+1. Repositorio: https://github.com/Lucke1059/proyecto_final
+2. GITHUB Pages: https://lucke1059.github.io/proyecto_final
+3. Hosting: http://proyectoadmbyte.great-site.net
 
 ---
 
